@@ -9,11 +9,17 @@ namespace NUnitTestProject1
         public void Setup()
         {
         }
-
+        /// <summary>
+        /// given distance and time should return total fare 
+        /// </summary>
         [Test]
-        public void Test1()
+        public void GivenDistanceAndTime_shouldReturn_TotalFare()
         {
-            Assert.Pass();
+            InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
+            double distance = 2.0;
+            int time = 5;
+            double fare=invoiceGenerator.calculateFare(distance, time);
+            Assert.AreEqual(25,fare);
         }
     }
 }

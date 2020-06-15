@@ -10,3 +10,4 @@ G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csproj.CoreComp
 G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.dll
 G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.pdb
 G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.genruntimeconfig.cache
+G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csprojAssemblyReference.cache
