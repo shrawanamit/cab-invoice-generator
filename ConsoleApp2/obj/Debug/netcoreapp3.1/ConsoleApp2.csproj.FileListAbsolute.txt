@@ -1,0 +1,12 @@
+G:\vs\cabInVoice\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.exe
+G:\vs\cabInVoice\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.deps.json
+G:\vs\cabInVoice\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.runtimeconfig.json
+G:\vs\cabInVoice\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.runtimeconfig.dev.json
+G:\vs\cabInVoice\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.dll
+G:\vs\cabInVoice\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.pdb
+G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.AssemblyInfoInputs.cache
+G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.AssemblyInfo.cs
+G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csproj.CoreCompileInputs.cache
+G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.dll
+G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.pdb
+G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.genruntimeconfig.cache
