@@ -15,9 +15,18 @@
         public double CalculateFare(double distance, int time)
         {
             double totalFare = distance * MINIMUM_Cost_PER_KILOMETER + time * COST_PER_TIME;
-            if(totalFare < MINIMUM_FARE)
+            if (totalFare < MINIMUM_FARE)
                 return MINIMUM_FARE;
             return totalFare;
+        }
+        public double CalculateFare(Ride[] rides)
+        {
+            double totalfare = 0;
+            foreach(Ride ride in rides)
+            {
+                totalfare += this.CalculateFare(ride.distance, ride.time);
+            }
+            return totalfare;
         }
     }
 }
