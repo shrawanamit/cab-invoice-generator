@@ -21,6 +21,9 @@ namespace NUnitTestProject1
             double fare=invoiceGenerator.CalculateFare(distance, time);
             Assert.AreEqual(25,fare);
         }
+        /// <summary>
+        /// given distance and time should return minimum fare
+        /// </summary>
         [Test]
         public void GivenLessDistanceOrTime_shouldReturn_TotalFare()
         {
@@ -29,6 +32,20 @@ namespace NUnitTestProject1
             int time = 1;
             double fare = invoiceGenerator.CalculateFare(distance, time);
             Assert.AreEqual(5, fare);
+        }
+        /// <summary>
+        /// multipal ride return total fare
+        /// </summary>
+        [Test]
+        public void GivenMultipalRide_shouldReturn_TotalFare()
+        {
+            InvoiceGenerator invoiceGenerator = new InvoiceGenerator();
+            Ride[] rides ={ new Ride(2.0, 5),
+                            new Ride(0.1,1)
+                            };
+           
+            double fare = invoiceGenerator.CalculateFare(rides);
+            Assert.AreEqual(30, fare);
         }
     }
 }
