@@ -6,8 +6,8 @@ G:\vs\cabInVoice\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.dll
 G:\vs\cabInVoice\ConsoleApp2\bin\Debug\netcoreapp3.1\ConsoleApp2.pdb
 G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.AssemblyInfoInputs.cache
 G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.AssemblyInfo.cs
-G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csproj.CoreCompileInputs.cache
 G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.dll
 G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.pdb
 G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.genruntimeconfig.cache
 G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csprojAssemblyReference.cache
+G:\vs\cabInVoice\ConsoleApp2\obj\Debug\netcoreapp3.1\ConsoleApp2.csproj.CoreCompileInputs.cache
