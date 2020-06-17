@@ -32,8 +32,8 @@ build/
 !.vscode/launch.json
 !.vscode/extensions.json
 *.code-workspace
-.testlog
-.suo
+.testlog/*
+.suo/*
 
 
 
