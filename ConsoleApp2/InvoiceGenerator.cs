@@ -1,11 +1,13 @@
-﻿namespace ConsoleApp2
+﻿using System.Reflection.Metadata;
+
+namespace ConsoleApp2
 {
     public class InvoiceGenerator
     {
         // create constant field to calculate fare
-        private static readonly int COST_PER_TIME = 1;
-        private static readonly double MINIMUM_Cost_PER_KILOMETER = 10;
-        private static readonly double MINIMUM_FARE = 5;
+        private const  int COST_PER_TIME = 1;
+        private const double MINIMUM_Cost_PER_KILOMETER = 10;
+        private const double MINIMUM_FARE = 5;
         /// <summary>
         /// calculate total fare 
         /// </summary>
@@ -19,14 +21,14 @@
                 return MINIMUM_FARE;
             return totalFare;
         }
-        public double CalculateFare(Ride[] rides)
+        public InvoiceSummary CalculateFare(Ride[] rides)
         {
             double totalfare = 0;
             foreach(Ride ride in rides)
             {
                 totalfare += this.CalculateFare(ride.distance, ride.time);
             }
-            return totalfare;
+            return new InvoiceSummary(rides.Length,totalfare);
         }
     }
 }
