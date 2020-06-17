@@ -867,6 +867,10 @@
         }
       },
       "ConsoleApp2/1.0.0": {
+        "dependencies": {
+          "System.Collections": "4.3.0",
+          "System.Collections.NonGeneric": "4.3.0"
+        },
         "runtime": {
           "ConsoleApp2.dll": {}
         }
