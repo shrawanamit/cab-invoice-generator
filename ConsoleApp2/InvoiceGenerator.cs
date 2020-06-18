@@ -58,12 +58,24 @@ namespace ConsoleApp2
             return totalFare;
         }
 
-        public double CalculateFare(InvoiceGenerator.Journey journey, double distance, int time)
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="journey"></param>
+        /// <param name="distance"></param>
+        /// <param name="time"></param>
+        /// <returns></returns>
+        public double CalculateFare(Journey journey, double distance, int time)
         {
-            if (journey == InvoiceGenerator.Journey.NORMAL)
+            if (journey == Journey.NORMAL)
                 return CalculateNormalFare(distance, time);
             return CalculatePremimumFare(distance, time);
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="rides"></param>
+        /// <returns></returns>
         public InvoiceSummary CalculateFare(Ride[] rides)
         {
             double totalfare = 0;
@@ -73,15 +85,44 @@ namespace ConsoleApp2
             }
             return new InvoiceSummary(rides.Length,totalfare);
         }
-
+        /// <summary>
+        /// add ride one by one
+        /// </summary>
+        /// <param name="userID"></param>
+        /// <param name="rides"></param>
         public void addRide(string userID, Ride[] rides)
         {
-            rideRepository.AddRide(userID, rides);
-        }
+            try
+            { 
+                rideRepository.AddRide(userID, rides); 
+            }
+            catch (ArgumentNullException e)
+            {
+                throw new CabInvoiceException(CabInvoiceException.ExceptionType.UserIdCanNotBeNull, e.Message);
+            }
 
+        }
+        /// <summary>
+        /// geting invoice summary
+        /// </summary>
+        /// <param name="userID"></param>
+        /// <returns></returns>
         public InvoiceSummary getInvoiceSummary(string userID)
         {
-            return this.CalculateFare(rideRepository.GetRides(userID));
+            try
+            {
+                if (userID.Length == 0)
+                {
+                    throw new CabInvoiceException(CabInvoiceException.ExceptionType.UserIdCanNotBeEmpty, "");
+                }
+                    return this.CalculateFare(rideRepository.GetRides(userID)); 
+                
+            }
+            catch (ArgumentNullException e)
+            {
+                throw new CabInvoiceException(CabInvoiceException.ExceptionType.UserIdCanNotBeNull, e.Message);
+            }
+
         }
     }
 }

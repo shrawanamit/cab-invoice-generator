@@ -4,14 +4,14 @@ using System.Text;
 
 namespace ConsoleApp2
 {
-    class CabInvoiceException : Exception
+    public class CabInvoiceException : Exception
     {
         /// <summary>
         /// Enum is Used to define Enumerated Data types
         /// </summary>
         public enum ExceptionType
         {
-            ValueCanNotBeEmpty, ValueCanNotBeNull
+            UserIdCanNotBeEmpty, UserIdCanNotBeNull
         }
 
         public ExceptionType type { get; set; }
